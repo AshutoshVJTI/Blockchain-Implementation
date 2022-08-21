@@ -1,5 +1,5 @@
 {
-  "name": "Mini_project",
+  "name": "implementation",
   "version": "1.0.0",
   "description": "",
   "directories": {
@@ -16,5 +16,9 @@
     "@openzeppelin/test-helpers": "^0.5.15",
     "@truffle/hdwallet-provider": "^2.0.3",
     "web3": "^1.7.1"
+  },
+  "dependencies": {
+    "global": "^4.4.0",
+    "truffle": "^5.5.27"
   }
 }

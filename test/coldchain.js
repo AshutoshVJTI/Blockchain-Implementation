@@ -54,8 +54,6 @@ contract('ColdChain', (accounts) => {
       7: { brand: this.VACCINE_BRANDS.Moderna, manufacturer: this.defaultEntities.manufacturerB.id },
       8: { brand: this.VACCINE_BRANDS.Sputnik, manufacturer: this.defaultEntities.manufacturerB.id },
       9: { brand: this.VACCINE_BRANDS.Covishield, manufacturer: this.defaultEntities.manufacturerA.id },
-
-
     };
 
     this.coldChainInstance = await ColdChain.deployed();
@@ -131,28 +129,28 @@ contract('ColdChain', (accounts) => {
       inspector.id
     );
 
-    // const result = await this.coldChainInstance.issueCertificate(
-    // inspector.id,
-    // manufacturerA.id,
-    // this.StatusEnums.manufactured.val,
-    // vaccineBatchId,
-    // signature,
-    // { from: this.owner }
-    // );
+    const result = await this.coldChainInstance.issueCertificate(
+      inspector.id,
+      manufacturerA.id,
+      this.StatusEnums.manufactured.val,
+      vaccineBatchId,
+      signature,
+      { from: this.owner }
+    );
 
-    // expectEvent(result.receipt,"IssueCertificate",{
-    //    issuer: inspector.id,
-    //    prover: manufacturerA.id,
-    //    certificateId: new BN(0)
-    // });
+    expectEvent(result.receipt, "IssueCertificate", {
+      issuer: inspector.id,
+      prover: manufacturerA.id,
+      certificateId: new BN(0)
+    });
 
-    // const retrievedCertificate= await this.coldChainInstance.certificates.call(0);
+    const retrievedCertificate = await this.coldChainInstance.certificates.call(0);
 
-    // assert.equal(retrievedCertificate.id,0);
-    // assert.equal(retrievedCertificate.issuer["id"],inspector.id);
-    // assert.equal(retrievedCertificate.prover["id"],manufacturerA.id);
-    // assert.equal(retrievedCertificate.signature,signature);
-    // assert.equal(retrievedCertificate.status,this.StatusEnums.manufactured.pos,toString());
+    assert.equal(retrievedCertificate.id, 0);
+    assert.equal(retrievedCertificate.issuer["id"], inspector.id);
+    assert.equal(retrievedCertificate.prover["id"], manufacturerA.id);
+    assert.equal(retrievedCertificate.signature, signature);
+    assert.equal(retrievedCertificate.status, this.StatusEnums.manufactured.pos, toString());
 
   });
 
@@ -163,13 +161,13 @@ contract('ColdChain', (accounts) => {
 
     const certificate = await this.coldChainInstance.certificates.call(0);
 
-    // const signerMatches = await this.coldChainInstance.isMatchingSignature(
-    //   this.web3.utils.keccak256(message),
-    //   certificate.id,
-    //   inspector.id,
-    //   {from: this.owner}
-    // );
+    const signerMatches = await this.coldChainInstance.isMatchingSignature(
+      this.web3.utils.keccak256(message),
+      certificate.id,
+      inspector.id,
+      { from: this.owner }
+    );
 
-    // assert.equal(signerMatches,true);
+    assert.equal(signerMatches, true);
   })
 });
