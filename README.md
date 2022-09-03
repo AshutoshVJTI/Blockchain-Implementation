@@ -1,4 +1,4 @@
-#Blockchain Supply Chain POC: COVID-19 Vaccine Passports
+# Blockchain Supply Chain POC: COVID-19 Vaccine Passports
 
 1. Goal
 Design and implement a system that solves a known problem of trust in the COVID-19 vaccine supply chain.
@@ -114,7 +114,7 @@ Anything not addressed in this video.
 3.4.2. 2-Tiered “dApp” Architecture
 ![image](https://user-images.githubusercontent.com/81223173/188287481-f33c87b4-6da4-4278-9868-9ce9b08b9f21.png)
 
-##References
+## References
 https://www.bbc.com/news/uk-northern-ireland-58054973
 https://www.vanguardngr.com/2021/10/fg-shocked-as-nigeria-loses-out-of-uk-recognised-covid-19-vaccine-certificates/
 https://healthpolicy-watch.news/russia-pushes-ahead-with-open-license-approach-to-sputnik-v-despite-who-concerns-over-manufacturing-practices/
