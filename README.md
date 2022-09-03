@@ -1,9 +1,9 @@
 # Blockchain Supply Chain POC: COVID-19 Vaccine Passports
 
-#### 1. Goal:
+### 1. Goal:
 Design and implement a system that solves a known problem of trust in the COVID-19 vaccine supply chain.
 
-#### 2. Requirements Gathering
+### 2. Requirements Gathering
 
 2.1. Vaccine Cold Chain
 
@@ -64,7 +64,7 @@ Data Redundancy
 the data can’t be lost even if a Traveller “misplaces” their device
 the data can’t be lost even if the vials are damaged
 
-#### 3. System Design
+### 3. System Design
 
 3.1. Flow
 Inspector issues certificate for batch to Manufacturer
