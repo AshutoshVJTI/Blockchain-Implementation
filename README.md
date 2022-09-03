@@ -115,6 +115,6 @@ Anything not addressed in this video.
 ![image](https://user-images.githubusercontent.com/81223173/188287481-f33c87b4-6da4-4278-9868-9ce9b08b9f21.png)
 
 ## References
-https://www.bbc.com/news/uk-northern-ireland-58054973
-https://www.vanguardngr.com/2021/10/fg-shocked-as-nigeria-loses-out-of-uk-recognised-covid-19-vaccine-certificates/
-https://healthpolicy-watch.news/russia-pushes-ahead-with-open-license-approach-to-sputnik-v-despite-who-concerns-over-manufacturing-practices/
+-https://www.bbc.com/news/uk-northern-ireland-58054973
+-https://www.vanguardngr.com/2021/10/fg-shocked-as-nigeria-loses-out-of-uk-recognised-covid-19-vaccine-certificates/
+-https://healthpolicy-watch.news/russia-pushes-ahead-with-open-license-approach-to-sputnik-v-despite-who-concerns-over-manufacturing-practices/
