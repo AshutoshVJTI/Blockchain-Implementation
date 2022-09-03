@@ -12,24 +12,24 @@ Design and implement a system that solves a known problem of trust in the COVID-
 Source: Vaccine cold chain Q&A
 
 #### 2.2. System Actors
-a. Manufacturer
-b. process raw materials into vaccines
-c. Distributor
-d. transports vaccines between locations
-e. Inspector
-f. performs quality checks on vaccines
-g. performs quality checks on manufacturing plants
-h. Storage Facility
-i. store vaccines in cold temperatures
-j. Immunizer (the doctors, nurses
-k. vaccinates people
-l. provides vaccine passport/certificates
-m. Traveller (the patient):
-n. receives vaccine
-o. receives vaccine certificate
-p. presents vaccine certificate at the border of the destination country
-q. Border Agent
-r. verifies the vaccine certificates/passports
+1. Manufacturer
+- process raw materials into vaccines
+2. Distributor
+-. transports vaccines between locations
+3. Inspector
+-. performs quality checks on vaccines
+-. performs quality checks on manufacturing plants
+4. Storage Facility
+-. store vaccines in cold temperatures
+5. Immunizer (the doctors, nurses
+-. vaccinates people
+-. provides vaccine passport/certificates
+6. Traveller (the patient):
+-. receives vaccine
+-. receives vaccine certificate
+-. presents vaccine certificate at the border of the destination country
+7. Border Agent
+-. verifies the vaccine certificates/passports
 
 #### 2.3. Problem-Solution Map
 
