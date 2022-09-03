@@ -5,33 +5,33 @@ Design and implement a system that solves a known problem of trust in the COVID-
 
 ### 2. Requirements Gathering
 
-2.1. Vaccine Cold Chain
+#### 2.1. Vaccine Cold Chain
 
 ![image](https://user-images.githubusercontent.com/81223173/188287314-3571eeef-b574-49c3-9a1b-2d4c8df9fc51.png)
 
 Source: Vaccine cold chain Q&A
 
-2.2. System Actors
-Manufacturer
-process raw materials into vaccines
-Distributor
-transports vaccines between locations
-Inspector
-performs quality checks on vaccines
-performs quality checks on manufacturing plants
-Storage Facility
-store vaccines in cold temperatures
-Immunizer (the doctors, nurses
-vaccinates people
-provides vaccine passport/certificates
-Traveller (the patient):
-receives vaccine
-receives vaccine certificate
-presents vaccine certificate at the border of the destination country
-Border Agent
-verifies the vaccine certificates/passports
+#### 2.2. System Actors
+a. Manufacturer
+b. process raw materials into vaccines
+c. Distributor
+d. transports vaccines between locations
+e. Inspector
+f. performs quality checks on vaccines
+g. performs quality checks on manufacturing plants
+h. Storage Facility
+i. store vaccines in cold temperatures
+j. Immunizer (the doctors, nurses
+k. vaccinates people
+l. provides vaccine passport/certificates
+m. Traveller (the patient):
+n. receives vaccine
+o. receives vaccine certificate
+p. presents vaccine certificate at the border of the destination country
+q. Border Agent
+r. verifies the vaccine certificates/passports
 
-2.3. Problem-Solution Map
+#### 2.3. Problem-Solution Map
 
 No.
 Problems
@@ -54,7 +54,7 @@ Immunizer
 Verify signatures in presented certificates
 
 
-2.4. Why Blockchain?
+#### 2.4. Why Blockchain?
 Tamper-Proof Provenance
 does the label on the vaccine’s vial accurately represent its contents?
 did the vaccine come from an inspected batch?
@@ -66,7 +66,7 @@ the data can’t be lost even if the vials are damaged
 
 ### 3. System Design
 
-3.1. Flow
+#### 3.1. Flow
 Inspector issues certificate for batch to Manufacturer
 <batch status updated to MANUFACTURED>
 Manufacturer presents certificate to Distributor
@@ -86,27 +86,27 @@ Immunizer vaccinates Traveller and issues vaccine passport
 Traveller presents vaccine passport to Border Agent
 Border Agent verifies vaccine passport
 
-3.2. User Classifications
+#### 3.2. User Classifications
 ![image](https://user-images.githubusercontent.com/81223173/188287460-0ccba217-7438-41b1-95e1-dea78d98f222.png)
 
 
-3.3. Use Cases
-As an Issuer, I can issue a signature representing a digital certificate for a manufacturer’s plant or storage facility
-As a Prover, I can present a certificate/signature issued to me
-As a Verifier, I can validate the signature on the blockchain for a vaccine
+#### 3.3. Use Cases
+- As an Issuer, I can issue a signature representing a digital certificate for a manufacturer’s plant or storage facility
+- As a Prover, I can present a certificate/signature issued to me
+- As a Verifier, I can validate the signature on the blockchain for a vaccine
 3.3.1. Out of Scope
-Payments between system agents;
-Dishonest doctors/immunizers;
-Suppliers of raw materials to the manufacturers;
-Image capture & QR code scanning;
-Scalability;
-Distribution to areas without internet access;
-IoT;
-Machine learning;
-Regulatory compliance (e.g. GDPR, HIPAA, etc.); and
-Anything not addressed in this video.
+- Payments between system agents;
+- Dishonest doctors/immunizers;
+- Suppliers of raw materials to the manufacturers;
+- Image capture & QR code scanning;
+- Scalability;
+- Distribution to areas without internet access;
+- IoT;
+- Machine learning;
+- Regulatory compliance (e.g. GDPR, HIPAA, etc.); and
+- Anything not addressed in this video.
 
-3.4. High-level Diagram
+#### 3.4. High-level Diagram
 
 3.4.1. 3-Tiered Architecture
 ![image](https://user-images.githubusercontent.com/81223173/188287464-dc171d22-f3af-4f7a-8209-2ef1353a6af3.png)
